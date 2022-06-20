@@ -1,0 +1,32 @@
+.contactsBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #e1fce1;
+}
+.contactsContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.contactsForm{
+min-height: 100px;
+    width: 280px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.send{
+    height: 40px;
+    width: 100px;
+    border: 1px solid;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
