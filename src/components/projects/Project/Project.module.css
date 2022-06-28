@@ -1,5 +1,6 @@
 .project{
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     min-height: 400px;
     background-color: snow;
     display: flex;
@@ -10,7 +11,8 @@
 
 .image{
     height: 320px;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     background-color: oldlace;
     display: flex;
     justify-content: center;
