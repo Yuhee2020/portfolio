@@ -10,9 +10,9 @@ export const Contacts = () => {
             <form className={s.contactsForm}>
                 <input type={"text"}/>
                 <input type={"text"}/>
-                <textarea></textarea>
+                <textarea/>
+                <button type={"submit"} className={s.send}>Send</button>
             </form>
-            <div className={s.send}><a href={""}>Send</a></div>
         </div>
 
     </div>
