@@ -6,7 +6,7 @@ import {Main} from "./Components/Main/Main";
 import {MyProj} from "./Components/MyProj/MyProj";
 import {Feedback} from "./Components/Feedback/Feedback";
 import {Footer} from "./Components/Footer/Footer";
-import {faCss3Alt, faJsSquare, faReact} from "@fortawesome/free-brands-svg-icons"
+import {faCss3Alt, faJsSquare, faReact, faHtml5, faFontAwesome} from "@fortawesome/free-brands-svg-icons"
 import {faDotCircle} from "@fortawesome/free-regular-svg-icons"
 import todolistPrev from "./common/c3-img/todoimg.jpg"
 import webSocialPrev from "./common/c3-img/63127038-62273800-bf7f-11e9-914f-bd1c431c76f2.png"
@@ -47,15 +47,21 @@ export const App = () => {
                 about: "I prefer to use React in conjunction with Redux (Toolkit). Redux-Thunk"
             },
             {
-                id: "Layout",
+                id: "CSS",
                 titleIcon: faCss3Alt,
-                iconColor: "#F16529",
-                about: "Layout: HTML5, CSS3, Scss, Mui"
+                iconColor: "blue",
+                about: "CSS3, Scss, MUI"
+            },
+            {
+                id: "HTML",
+                titleIcon: faHtml5,
+                iconColor: "red",
+                about: "HTML5"
             },
             {
                 id: "Other",
-                titleIcon: faDotCircle,
-                iconColor: "",
+                titleIcon: faFontAwesome,
+                iconColor: "#00b074",
                 about: "Also: Axios, REST API, Unit Tests (Jest), Storybook, Git"
             },
         ],
