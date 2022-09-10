@@ -1,0 +1,12 @@
+@import "../../common/c1-styles/sass/variables";
+
+.container {
+  padding: 40px 0;
+
+  .contentContainer {
+    padding: 0 15px 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}

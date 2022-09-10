@@ -1,0 +1,6 @@
+@import "./variables";
+
+@mixin flexDisplay($flexDirection) {
+  display: flex;
+  flex-direction: $flexDirection;
+}

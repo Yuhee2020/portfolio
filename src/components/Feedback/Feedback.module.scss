@@ -1,0 +1,62 @@
+@import "../../common/c1-styles/sass/variables";
+@import "../../common/c1-styles/sass/mixins";
+
+.container {
+  padding: 70px 0;
+  min-height: 80vh;
+  background-color: $secondaryColor;
+  @include flexDisplay(column);
+  align-items: center;
+  color: $textColor2;
+
+  .feedbackContainer {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    color: $textColor;
+
+    .formContainer {
+      padding: 50px 0;
+      background-color: $mainBackground;
+      border-radius: 20px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+      @include flexDisplay(column);
+      width: 100%;
+
+      h4 {
+        padding: 0 25px 0 25px;
+        line-height: 32px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 700;
+
+        span {
+          color: $primaryColor;
+        }
+      }
+
+      .form {
+        @include flexDisplay(column);
+        width: 100%;
+
+        button {
+          margin: 0 20px;
+        }
+      }
+
+      .mesSent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .messageDone{
+          margin: 0;
+          border: 4px solid $primaryColor;
+          padding: 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../common/c1-styles/sass/variables";
+@import "../../common/c1-styles/sass/mixins";
+
+.container {
+  padding: 0 15px 0 15px;
+  min-height: 100vh;
+  @include flexDisplay(column);
+  align-items: center;
+  justify-content: center;
+
+  .contentContainer {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    h1 {
+      font-family: $titleFontFamily;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 82px;
+    }
+
+    img {
+      width: 180px;
+      border-radius: 50%;
+      border: 5px solid $primaryColor;
+      @media (min-width: 650px){
+        width: 320px;
+      }
+    }
+
+    .aboutMe {
+      position: relative;
+      padding: .2em 0;
+      font-size: 22px;
+      line-height: 42px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primaryColor;
+      }
+    }
+  }
+}

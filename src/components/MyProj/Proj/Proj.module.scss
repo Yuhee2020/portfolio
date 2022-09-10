@@ -1,0 +1,27 @@
+@import "../../../common/c1-styles/sass/variables";
+
+.container {
+  margin: 0 15px 40px 15px;
+  max-width: 320px;
+  background-color: $secondaryColor;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 250px;
+  color: $textColor2;
+  .projScreen {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about {
+    padding: 10px;
+
+    h4 {
+      margin-bottom: 4px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "./common/c1-styles/sass/variables.sass";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+::after, ::before {
+  transition: all .3s ease 0s;
+}
+
+body {
+  padding: 0;
+  background-color: $mainBackground;
+  font-family: $textFontFamily;
+  font-size: $textFontSize;
+  letter-spacing: 1px;
+  color: $textColor;
+  font-weight: 400;
+  line-height: 1.7;
+  position: relative;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $titleFontFamily;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  input, textarea {
+    font-family: $textFontFamily;
+    color: #222;
+  }
+}
