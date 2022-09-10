@@ -1,16 +1,21 @@
-import React from "react";
-import s from "./Main.module.css"
-import sC from "../common/styles/Container.module.css"
+import React from "react"
+import styles from "./Main.module.scss"
+import myPhoto from "../../common/c3-img/20200908_155403 (2).jpg"
+import ReactTypingEffect from 'react-typing-effect'
 
-export const Main=()=>{
-    return <div className={s.main}>
-        <div className={sC.container}>
-        <div className={s.text}>
-            <span>Hi There</span>
-            <h1>I am Yukhimuk Dzmitry</h1>
-            <p>Front-end developer</p>
+export const Main = () => {
+    return (
+        <div id={"main"} className={styles.container}>
+                <div className={styles.contentContainer}>
+
+                    <img src={myPhoto} alt="Author"/>
+                    <h1>
+                        Hi, I'm Yukhimuk Dmitry!
+                    </h1>
+                    <div className={styles.aboutMe}>
+                        <ReactTypingEffect text={["Front-end developer"]}/>
+                    </div>
+                </div>
         </div>
-        <div className={s.photo}></div>
-        </div>
-    </div>
+    )
 }

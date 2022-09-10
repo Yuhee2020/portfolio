@@ -1,9 +1,13 @@
-import React from "react";
-import s from "./Header.module.css"
-import {Nav} from "../nav/Nav";
+import React from "react"
+import styles from "./Header.module.scss"
+import {Nav} from "../Nav/Nav";
 
 export const Header = () => {
-    return <div className={s.header}>
-        <Nav/>
-    </div>
+
+
+    return (
+        <header className={styles.container}>
+            <Nav/>
+        </header>
+    )
 }

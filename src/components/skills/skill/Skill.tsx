@@ -1,16 +1,23 @@
-import React from "react";
-import s from "./Skill.module.css"
+import React from "react"
+import styles from "./Skill.module.scss"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {SkillType} from "../../../App";
 
-type PropsType={
-    title: string
-    description: string
+type SkillPropsType = {
+    skill: SkillType
 }
 
-export const Skill = (props:PropsType) => {
-    return <div className={s.skill}>
-        <div className={s.icon}></div>
-        <h3>{props.title}</h3>
-        <span className={s.description}>{props.description}</span>
-
-    </div>
+export const Skill = ({skill}: SkillPropsType) => {
+    return (
+        <div className={styles.skillContainer}>
+            <FontAwesomeIcon
+                icon={skill.titleIcon}
+                color={skill.iconColor}
+                size={"5x"}
+            />
+            <p>
+                {skill.about}
+            </p>
+        </div>
+    )
 }
