@@ -8,5 +8,15 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+
+    .contacts {
+      padding: 10px;
+
+      a {
+        padding: 0 5px;
+        text-decoration: none;
+        color: $secondaryColor;
+      }
+    }
   }
 }

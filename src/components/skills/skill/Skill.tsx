@@ -13,7 +13,7 @@ export const Skill = ({skill}: SkillPropsType) => {
             <FontAwesomeIcon
                 icon={skill.titleIcon}
                 color={skill.iconColor}
-                size={"5x"}
+                size={"6x"}
             />
             <p>
                 {skill.about}
