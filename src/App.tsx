@@ -6,11 +6,10 @@ import {Main} from "./Components/Main/Main";
 import {MyProj} from "./Components/MyProj/MyProj";
 import {Feedback} from "./Components/Feedback/Feedback";
 import {Footer} from "./Components/Footer/Footer";
-import {faCss3Alt, faJsSquare, faReact, faHtml5, faFontAwesome} from "@fortawesome/free-brands-svg-icons"
-import {faDotCircle} from "@fortawesome/free-regular-svg-icons"
-import todolistPrev from "./common/c3-img/todoimg.jpg"
+import {faCss3Alt, faFontAwesome, faHtml5, faJsSquare, faReact} from "@fortawesome/free-brands-svg-icons"
 import webSocialPrev from "./common/c3-img/63127038-62273800-bf7f-11e9-914f-bd1c431c76f2.png"
-import goodsPrev from "./common/c3-img/goods.jpg"
+import PandC from "./common/c3-img/PandC.png"
+import myTodo from "./common/c3-img/myToDo.png"
 
 export type SkillType = {
     id: string
@@ -68,26 +67,26 @@ export const App = () => {
 
         projects: [
             {
-                id: "WebSocial",
-                title: "Social Net",
+                id: "Packs and Cards",
+                title: "Packs and Cards",
+                screen: PandC,
+                about: "TypeScript, React, Redux, Router-dom, Redux-thunk, Mui, Axios, Formik, Bug fixing, deploying, Teamwork",
+                url: "https://yuhee2020.github.io/packs-and-cards/"
+            },
+            {
+                id: "MyToDo",
+                title: "MyToDo",
+                screen: myTodo,
+                about: "TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, Axios, Mui, Formik, Storybook; Bug fixing, deploying; Covering code with unit tests.",
+                url: "https://yuhee2020.github.io/mytodo/"
+            },
+            {
+                id: "SN",
+                title: "SN",
                 screen: webSocialPrev,
                 about: "TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, Axios, Mui for some component, SCSS, Formik; Bug fixing, deploying.",
-                url: ""
-            },
-            {
-                id: "Todo",
-                title: "To Do List",
-                screen: todolistPrev,
-                about: "TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, Axios, Mui, Formik, Storybook; Bug fixing, deploying; Covering code with unit tests.",
-                url: ""
-            },
-            {
-                id: "Goods",
-                title: "Goods",
-                screen: goodsPrev,
-                about: "TypeScript, React, Redux Toolkit, Router-dom, Mui, Formik, Firebase Storybook; Bug fixing, deployin; Covering code with unit tests.",
-                url: ""
-            },
+                url: "https://yuhee2020.github.io/SN/"
+            }
         ]
     }
 
@@ -95,7 +94,6 @@ export const App = () => {
         <div>
             <Header/>
             <div className={styles.container}>
-
                 <Main/>
                 <Skills skills={bll.skills}/>
                 <MyProj projects={bll.projects}/>
