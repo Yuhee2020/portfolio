@@ -6,10 +6,9 @@ import {Title} from "../../common/c2-components/c1-title/title";
 import {Input} from "../../common/c2-components/c3-input/custom-inpt";
 import {Textarea} from "../../common/c2-components/c4-textarea/custom-textarea";
 import {Button} from "../../common/c2-components/c2-button/custom-button";
-//@ts-ignore
-import Fade from "react-reveal/Fade"
 // import emailjs from "@emailjs/browser";
 import axios from "axios";
+import {Zoom} from "react-awesome-reveal";
 
 export const Feedback = () => {
 
@@ -68,10 +67,12 @@ export const Feedback = () => {
     })
 
     return (
+
         <div id={"feedback"} className={styles.container}>
-            <Fade bottom>
+
                 <Title title={"Feedback"}/>
                 <div className={styles.feedbackContainer}>
+                    <Zoom>
                     <div className={styles.formContainer}>
 
                         {/*Message form*/}
@@ -113,8 +114,9 @@ export const Feedback = () => {
                         </div>
                         }
                     </div>
+                        </Zoom>
                 </div>
-            </Fade>
         </div>
+
     )
 }

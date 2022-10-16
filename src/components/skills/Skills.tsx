@@ -3,8 +3,8 @@ import styles from "./Skills.module.scss"
 import {Skill} from "./Skill/Skill";
 import {Title} from "../../common/c2-components/c1-title/title";
 import {SkillType} from "../../App";
-//@ts-ignore
-import Fade from "react-reveal/Fade"
+import Fade from "react-awesome-reveal";
+
 
 type SkillsPropsType = {
     skills: SkillType[]
@@ -16,9 +16,8 @@ export const Skills = ({skills}: SkillsPropsType) => {
 
     return (
         <div id={"skills"} className={styles.container}>
-            <Fade bottom>
+            <Fade cascade >
                 <Title title={"My Skills"}/>
-
                 <div className={styles.skillsContainer}>
                     {skillsArr}
                 </div>

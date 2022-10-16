@@ -3,8 +3,8 @@ import styles from "./MyProj.module.scss"
 import {Proj} from "./Proj/Proj";
 import {Title} from "../../common/c2-components/c1-title/title";
 import {ProjectType} from "../../App";
-//@ts-ignore
-import Fade from "react-reveal/Fade"
+import Fade from "react-awesome-reveal";
+
 
 type MyProjPropsType = {
     projects: ProjectType[]
@@ -16,7 +16,7 @@ export const MyProj = ({projects}: MyProjPropsType) => {
 
     return (
         <div id={"proj"} className={styles.container}>
-            <Fade bottom>
+            <Fade cascade>
                 <Title title={"My Projects"}/>
                 <div className={styles.projContainer}>
                     {projArr}
