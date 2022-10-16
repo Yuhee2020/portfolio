@@ -7,6 +7,17 @@
   @include flexDisplay(column);
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+
+  }
 
   .contentContainer {
     position: relative;
@@ -31,7 +42,7 @@
       width: 180px;
       border-radius: 50%;
       border: 5px solid $primaryColor;
-      @media (min-width: 650px){
+      @media (min-width: 650px) {
         width: 320px;
       }
     }
