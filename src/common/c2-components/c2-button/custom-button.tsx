@@ -10,10 +10,12 @@ type CustomButtonPropsType = DefaultButtonPropsType & {
     buttonType: ButtonType
     title: string
     url?: string
+    callback?:()=>void
+
 }
 
 
-export const Button = ({type, buttonType, title, url}: CustomButtonPropsType) => {
+export const Button = ({type, buttonType, title, url, callback}: CustomButtonPropsType) => {
 
     if (buttonType === "link") {
         return (
@@ -26,7 +28,7 @@ export const Button = ({type, buttonType, title, url}: CustomButtonPropsType) =>
     }
     return (
         <div className={styles.btnContainer}>
-            <button type={type ? type : "button"} className={styles.element}>
+            <button type={type ? type : "button"} onClick={callback} className={styles.element}>
                 {title}
             </button>
         </div>
