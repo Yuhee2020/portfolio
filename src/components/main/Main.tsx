@@ -1,6 +1,6 @@
 import React, {useCallback} from "react"
 import styles from "./Main.module.scss"
-import myPhoto from "../../common/c3-img/20200908_155403 (2).jpg"
+import myPhoto from "../../common/c3-img/3.jpg"
 import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
 import { Engine } from "tsparticles-engine"
