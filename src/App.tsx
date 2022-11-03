@@ -82,10 +82,10 @@ export const App = () => {
             },
             {
                 id: "SN",
-                title: "SN",
+                title: "SoNet",
                 screen: webSocialPrev,
                 about: "TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, Axios, Mui for some component, SCSS, Formik; Bug fixing, deploying.",
-                url: "https://yuhee2020.github.io/SN/"
+                url: "https://yuhee2020.github.io/SoNet/"
             }
         ]
     }
